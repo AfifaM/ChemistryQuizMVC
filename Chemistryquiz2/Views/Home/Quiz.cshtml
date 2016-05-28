@@ -1,0 +1,33 @@
+﻿@model Chemistryquiz2.Models.Quizze
+
+@{
+    ViewBag.Title = "Quiz";
+    var item = Model;
+}
+
+<h3>@item.Title</h3>
+
+<br />
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.Action("_Questions", "Home", new { quizId = item.Id })
+    <br />
+    <br />
+    <p class="largeDivider align-center"></p>
+    if (item.Id == 1)
+    {
+        <input class="align-center" type="submit" name="Quiz" value="Submit Chemistry Quiz" />
+    }
+    else
+    {
+        <input class="align-center" type="submit" name="Quiz" value="Submit Chemistry Quiz" />
+    }
+
+
+}
+
+
+
+

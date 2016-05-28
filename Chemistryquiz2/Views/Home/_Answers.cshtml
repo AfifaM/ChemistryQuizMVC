@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Chemistryquiz2.Models.Answer>
+
+@foreach (var item in Model)
+{
+    <div class="answers radio">
+        @Html.RadioButton(@item.QuestionID.ToString(), @item.Id)@item.Text
+        <br />
+    </div>
+}
+

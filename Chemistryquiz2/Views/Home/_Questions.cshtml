@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Chemistryquiz2.Models.Question>
+
+@{
+    ViewBag.Title = "Questions";
+    int quizId = ViewBag.QuizId;
+    int questionNumber = 0;
+}
+
+@{
+    foreach (var item in Model)
+    {
+        <div class="questions form-group align-center">
+            @if (quizId != 0)
+            {
+                questionNumber++;
+            }
+            <span class="questionNumber">@questionNumber. </span>@item.Text<br />
+            <br />
+            @Html.Action("_Answers", "Home", new { questionId = item.Id })
+            <br />
+            <br />
+        </div>
+
+    }
+}
+

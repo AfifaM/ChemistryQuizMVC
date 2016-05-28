@@ -1,0 +1,23 @@
+﻿@model Chemistryquiz2.Models.Result
+
+@{
+    ViewBag.Title = "Result";
+
+    var item = Model;
+
+}
+
+<h3>Quiz Result</h3>
+
+
+<br />
+@if (item.QuizID == 1)
+{
+    <p class="description align-center">You scored @ViewBag.QuizScore out of 13.</p>
+    <br />
+}
+<p class="description align-center">@Html.Raw(@item.Text)</p><br />
+<br />
+
+
+
