@@ -1,10 +1,9 @@
 ﻿body {
-    padding-top: 0px;
-    margin-top:0;
+    padding-top: 20px;
     padding-bottom: 20px;
-    font-family:'Times New Roman', Times, serif;
-    /*font-size:1.7em;*/
-    color:white;
+    background-color: #A0AEC1;
+    color: #466289;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -19,28 +18,35 @@ select,
 textarea {
     max-width: 280px;
 }
+.btn-default {
+    background-color: #466289;
+    color: #fff;
+    font-size: 30px;
+}
 
-.banner {
-    padding:0;
-    margin:0;
-    height:100px;
-    width:100%;
-    background-image:url(./Images/grey.jpg);
-   
-    
+.heading {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
 }
-h1
-{
-    color:white;
-    font-family:  'Blackadder ITC', 'Edwardian Script ITC', 'Matura MT Script Capitals',  'Times New Roman';
-    font-size: 66pt;
-    font-weight: bolder;
-    position:center;
-    text-align:center;
-    padding: 20px;
-    margin: 20px; 
-    z-index: 20;
+
+.heading-container {
+    padding: 10px 0;
+    background: #466289;
 }
+
+.quiz {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.quiz-container {
+    padding: 10px 0;
+    background: #627894;
+
+}
+
 
 a:hover, a:focus, a:active, a:visited
 {
@@ -74,15 +80,17 @@ footer
 {
     width: 100%;
     height: 50px;
-    padding: 0;
-    margin: 0;
-    background-color: lightgrey;
+    padding-top: 1%;
+    padding-left:1%;
+    margin-top: 1%;
+    margin-left:1%;
+    background-color: lightyellow;
     
 }
 #footerText
 {
     color: black;
-    font-size: 0.8em;
+    font-size: 18px;
     padding-top: 1%;
     padding-left: 1%;
     margin-top: 1%;
@@ -113,9 +121,10 @@ footer
 {
     font-family: Calibri, 'Edwardian Script ITC', 'Matura MT Script Capitals',  'Times New Roman';
     font-size: 15pt;
-    margin: auto;
-    color:darkslategrey;
-    position:absolute; 
+    margin: 0 auto;
+    color:darkmagenta;
+    display:block;
+    padding-left:400px;
 }
 
 .description 
@@ -131,16 +140,13 @@ footer
     display: block;
     margin-left: 50px;
 }
-.quizIndexText
-{
-    margin-left: 25px;
-}
+
 
     
 .questionNumber
 {
     font-family:  Calibri, 'Edwardian Script ITC', 'Matura MT Script Capitals',  'Times New Roman';
-    color: darkslategray;
+    color: darkmagenta;
     font-size: 18px;
     line-height: 1;
 }
@@ -152,8 +158,16 @@ footer
 
 .align-center
 {
+    background-image:url(./Images/white.jpg);
     display: block;
     margin: 0 auto;
-    color:darkslategray;
+    color:darkmagenta;
+    font-size:16px;
+    font-weight:bold;
+}
+.center-block {
+    display:block;
+    margin-left:0;
+    margin-right:0;
 }
 

@@ -9,27 +9,26 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="banner"><h1>Chemistry Quiz</h1></div>
-    <div class="navbar navbar-default">
-        <div class="container">
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav text-effects">
-                    <li class="active">@Html.ActionLink("Quiz", "Index", "Home")</li>
-
-                </ul>
-            </div>
-        </div>
+    <div class="container heading-container">
+        <div class="heading">Chemistry Quiz</div>
     </div>
+    <hr />
+        
+         <div class="col-sm-12">
+          <p align="center">
+           @Html.ActionLink("Quiz", "Index", "Home", new { @class = "btn btn-default" })
+           </p>
+        </div>
+    <br />
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <div id="footerText">
-                <p>&copy; @DateTime.Now.Year - Afifa Moosa - My Quiz</p>
-            </div>
-        </footer>
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+                <footer>
+     <div id="footerText">
+        <p>&copy; @DateTime.Now.Year - Afifa Moosa - My Quiz</p>
+    </div>
+    </footer>
     </div>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
